@@ -487,3 +487,159 @@ USUARIO
     font-size:13px;
 
 }
+
+/*=========================================
+LOGIN
+=========================================*/
+
+.login-body{
+
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top,
+    #20355E 0%,
+    #111827 70%);
+
+}
+
+.login-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    background:#1E293B;
+
+    border:1px solid #32496E;
+
+    border-radius:18px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+    animation:aparecer .6s ease;
+
+}
+
+.login-logo{
+
+    width:150px;
+
+    margin-bottom:35px;
+
+    filter: drop-shadow(0 0 18px rgba(37,180,244,.25));
+transition: .3s;
+
+}
+
+
+.login-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border-radius:10px;
+
+    border:1px solid #32496E;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.login-box input:focus{
+
+    border-color:#38BDF8;
+
+    box-shadow:0 0 12px rgba(56,189,248,.25);
+
+}
+
+.login-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#1D4ED8;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.login-box button:hover{
+
+    background:#2563EB;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+
+}
+
+.login-logo:hover{
+    transform:scale(1.03);
+    filter:drop-shadow(0 0 28px rgba(37,180,244,.45));
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

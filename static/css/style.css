@@ -1,0 +1,489 @@
+/* ========================================
+   GESTOR DE DATAS CONEX
+   Tema Oscuro
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:radial-gradient(
+        circle at top,
+        #20355E 0%,
+        #111827 60%,
+        #0D1117 100%
+    );
+
+    color:#F8FAFC;
+
+    font-family:Segoe UI, sans-serif;
+
+}
+
+.app{
+
+    display:flex;
+
+    height:100vh;
+
+}
+/* ========================================
+   SIDEBAR
+======================================== */
+
+.sidebar{
+
+    width:250px;
+
+    background:#0B0B0B;
+
+    border-right:1px solid #2B4266;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+.logo{
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid #33527A;
+
+    overflow:hidden;
+
+}
+
+.logo img{
+
+    width:150px;
+
+    
+}
+
+.logo p{
+
+    color:#94A3B8;
+
+    margin-top:12px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+/* ========================================
+   MENU
+======================================== */
+
+nav{
+    margin-top:20px;
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav li{
+
+    display:flex;
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 25px;
+
+    color:#CBD5E1;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:15px;
+
+}
+
+nav li:hover{
+
+    background:#1E355A;
+
+    padding-left:32px;
+
+}
+
+nav li.active{
+
+    background:#2B4266;
+
+    border-left:4px solid #25B4F4;
+
+    color:white;
+
+}
+
+nav li span{
+
+    width:22px;
+
+    text-align:center;
+
+}
+/* ========================================
+   CONTENIDO
+======================================== */
+
+.main{
+
+    flex:1;
+    padding:50px;
+
+    background:linear-gradient(
+    180deg,
+    rgba(15,23,42,.15),
+    rgba(30,41,59,.05)
+    );
+
+}
+
+header{
+
+    margin-bottom:30px;
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+header p{
+
+    color:#8EA6C7;
+
+    font-size:17px;
+
+}
+.cards{
+
+    display:flex;
+
+    gap:16px;
+
+    margin-bottom:30px;
+
+}
+
+.card{
+
+    flex:1;
+
+    background:#1A2438;
+
+    border-radius:14px;
+
+    padding:25px;
+
+    border:1px solid #31435F;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+    transition:.25s;
+cursor:pointer;
+
+}
+
+.card h3{
+
+    color:#7DD3FC;
+
+    font-size:15px;
+
+}
+
+.card span{
+
+    font-size:40px;
+
+    color:#6CCBFF;
+
+    font-weight:700;
+
+}
+.card small{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#94A3B8;
+
+    font-size:13px;
+
+    letter-spacing:.5px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
+
+    border:1px solid #25B4F4;
+
+}
+.panel{
+
+background:#1A2438;
+border:1px solid #31435F;
+
+    padding:30px;
+
+    min-height:420px;
+
+    border:1px solid #334155;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.panel h2{
+
+    margin-bottom:15px;
+
+}
+
+.panel p{
+
+    color:#CBD5E1;
+
+}
+
+/*=========================================
+TOPBAR
+=========================================*/
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:35px;
+
+}
+
+.titulo h1{
+
+    font-size:58px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.titulo p{
+
+    margin-top:8px;
+
+    color:#94A3B8;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+USUARIO
+=========================================*/
+
+.usuario{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+}
+
+.fecha{
+
+    color:#7DD3FC;
+
+    margin-bottom:12px;
+
+    font-size:14px;
+
+}
+
+.perfil{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#1D2C47;
+
+    padding:14px 20px;
+
+    border-radius:14px;
+
+    border:1px solid #35527A;
+
+}
+
+.avatar{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#25B4F4;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-weight:bold;
+
+}
+
+.info h4{
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.info small{
+
+    color:#8CA8C7;
+
+}
+
+/* ========================================
+   ACTIVIDAD RECIENTE
+======================================== */
+
+.activity{
+
+    margin-top:25px;
+
+}
+
+.activity-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #31415D;
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    margin-top:6px;
+
+    flex-shrink:0;
+
+}
+
+.success .activity-dot{
+
+    background:#22C55E;
+
+}
+
+.info .activity-dot{
+
+    background:#38BDF8;
+
+}
+
+.warning .activity-dot{
+
+    background:#F59E0B;
+
+}
+
+.danger .activity-dot{
+
+    background:#EF4444;
+
+}
+
+.activity-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.activity-content strong{
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.activity-content span{
+
+    color:#CBD5E1;
+
+    margin-top:4px;
+
+}
+
+.activity-content small{
+
+    color:#7C8CA7;
+
+    margin-top:5px;
+
+    font-size:13px;
+
+}

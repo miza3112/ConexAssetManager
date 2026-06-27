@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gestor de Datas Conex</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+    <div class="logo">
+
+    <img src="{{ url_for('static', filename='img/logo_conex.png') }}" alt="Logo Conex">
+
+
+</div>
+
+    <nav>
+
+        <ul>
+
+            <li class="active">
+                <span>🏠</span>
+                Dashboard
+            </li>
+
+            <li>
+                <span>📍</span>
+                Datas
+            </li>
+
+            <li>
+                <span>📦</span>
+                Inventario
+            </li>
+
+            <li>
+                <span>🔍</span>
+                Buscar
+            </li>
+
+            <li>
+                <span>📊</span>
+                Reportes
+            </li>
+
+            <li>
+                <span>⚙</span>
+                Configuración
+            </li>
+
+        </ul>
+
+    </nav>
+
+</aside>
+
+    <div class="main">
+
+        <header class="topbar">
+
+    <div class="titulo">
+
+        <h1>Dashboard</h1>
+
+        <p>Resumen general del sistema.</p>
+
+    </div>
+
+    <div class="usuario">
+
+        <span class="fecha">
+            27 Jun 2026
+        </span>
+
+        <div class="perfil">
+
+            <div class="avatar">
+                👤
+            </div>
+
+            <div class="info">
+
+                <h4>Invitado</h4>
+
+                <small>Sin iniciar sesión</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+        <section class="cards">
+
+            <div class="card">
+
+    <h3>Datas registradas</h3>
+
+    <span>28</span>
+
+    <small>Total registradas</small>
+
+</div>
+
+<div class="card">
+
+    <h3>Equipos en almacén</h3>
+
+    <span>1245</span>
+
+    <small>Disponibles</small>
+
+</div>
+
+<div class="card">
+
+    <h3>Equipos asignados</h3>
+
+    <span>1227</span>
+
+    <small>En Datas</small>
+
+</div>
+
+<div class="card">
+
+    <h3>Pendientes</h3>
+
+    <span>18</span>
+
+    <small>Por revisar</small>
+
+</div>
+
+        </section>
+
+        <section class="panel">
+
+<div class="panel-header">
+
+<h2>Actividad reciente</h2>
+
+</div>
+
+<div class="activity">
+
+    <div class="activity-item success">
+
+        <div class="activity-dot"></div>
+
+        <div class="activity-content">
+
+            <strong>Nueva Data registrada</strong>
+
+            <span>FTTH-02651</span>
+
+            <small>Hace 5 minutos</small>
+
+        </div>
+
+    </div>
+
+    <div class="activity-item info">
+
+        <div class="activity-dot"></div>
+
+        <div class="activity-content">
+
+            <strong>Router Huawei entregado</strong>
+
+            <span>Serie HG8245H</span>
+
+            <small>Hace 18 minutos</small>
+
+        </div>
+
+    </div>
+
+    <div class="activity-item warning">
+
+        <div class="activity-dot"></div>
+
+        <div class="activity-content">
+
+            <strong>Equipo enviado a revisión</strong>
+
+            <span>ONU ZTE</span>
+
+            <small>Hace 1 hora</small>
+
+        </div>
+
+    </div>
+
+    <div class="activity-item danger">
+
+        <div class="activity-dot"></div>
+
+        <div class="activity-content">
+
+            <strong>Equipo dado de baja</strong>
+
+            <span>Ayer</span>
+
+            <small>17:42</small>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
